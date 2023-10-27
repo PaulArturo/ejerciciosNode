@@ -43,9 +43,9 @@ function readInt(){
         rl.question('Escribe un número entero: ', (respuesta) => {
             let numero = parseInt(respuesta, 10);
             if (!isNaN(numero)) {
-              resolve(numero); // Resuelve la promesa con el número
+              resolve(numero);
             } else {
-              reject(new Error('No ingresaste un número entero válido.')); // Rechaza la promesa en caso de entrada no válida
+              reject(new Error('No ingresaste un número entero válido.')); 
             }
         })
       }
